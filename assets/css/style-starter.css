@@ -11766,13 +11766,14 @@ fieldset:disabled .btn {
   }
 }
 
-/*# sourceMappingURL=bootstrap.css.map */
-/* //bootstrap */
-
 /* css style */
 :root {
-  --primary-color: #037ef3;
-  --secondary-color: #26D0CE;
+  --ib-bg: #603814;
+  --primary-color: #603814;
+  --light-color: #ffffff;
+  --gray-color: #ECEBDE;
+
+
   --font-color: #363636;
   --bg-color: #fff;
   --heading-color: #060606;
@@ -11785,12 +11786,12 @@ fieldset:disabled .btn {
   --serach-shadow: rgb(0 0 0 / 5%);
   --disable-color: #d8d6d6;
   --box-shadow: 0 20px 62px rgba(4, 20, 69, .1);
-  --layer: linear-gradient(to right, rgb(26 41 128 / 78%), rgb(46 234 232 / 59%));
-  --gradient-color: linear-gradient(to right, #1A2980, #26D0CE);
+  --layer: linear-gradient(to right, rgb(96 56 20 / 78%), rgb(96 56 20 / 59%));
+  --gradient-color: linear-gradient(to right, #603814, #ce945f);
 }
 
 [data-theme="dark"] {
-  --primary-color: #037ef3;
+  --primary-color: #603814;
   --secondary-color: #26D0CE;
   --font-color: #b7b7b7;
   --bg-color: #09131d;
@@ -11802,8 +11803,8 @@ fieldset:disabled .btn {
   --serach-shadow: rgb(6 8 8);
   --disable-color: #5d5d5d;
   --box-shadow: 0 1rem 3rem rgb(4 8 12);
-  --layer: linear-gradient(to right, rgb(17 26 82 / 78%), rgb(26 136 135 / 59%));
-  --gradient-color: linear-gradient(to right, #17246d, #20a7a5);
+  --layer: linear-gradient(to right, rgb(96 56 20 / 78%), rgb(96 56 20 / 59%));
+  --gradient-color: linear-gradient(to right, #603814, #ce945f);
 }
 
 * {
@@ -18230,7 +18231,7 @@ input:checked+.mode-container i.gg-moon {
 }
 
 .nav-fixed .navbar-expand-lg .navbar-nav .nav-link {
-  color: var(--heading-color);
+  color: var(--gray-color);
 }
 
 .nav-fixed .navbar-expand-lg .navbar-nav .show>.nav-link,
@@ -18238,8 +18239,8 @@ input:checked+.mode-container i.gg-moon {
 .nav-fixed .navbar-expand-lg .navbar-nav .nav-link.show,
 .nav-fixed .navbar-expand-lg .navbar-nav .nav-link.active,
 .nav-fixed .navbar-expand-lg .navbar-nav .nav-link:hover {
-  color: var(--primary-color);
-  border-color: var(--primary-color);
+  color: var(--light-color);
+  border-color: var(--light-color);
 }
 
 /* //dark and light mode styling */
@@ -18896,7 +18897,7 @@ header {
 
 header.nav-fixed {
   padding: 0;
-  background-color: var(--bg-color);
+  background-color: var(--ib-bg);
   height: 80px;
   border-bottom: none;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
@@ -19798,6 +19799,18 @@ h5.member a {
   border: 1px solid var(--border-color-light);
   border-top: none;
   border-radius: 0 0 8px 8px;
+  height: 90px;
+}
+
+.w3l-index5 .team-info {
+  background: var(--light-color);
+  padding: 20px 15px;
+  text-align: center;
+  height: 226px;
+}
+.w3l-index5 .team-info h5 {
+  font-weight: bold;
+  padding-bottom: 8px;
 }
 
 .w3l-index5 .blog-info p {
