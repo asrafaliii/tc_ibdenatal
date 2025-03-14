@@ -19330,6 +19330,21 @@ p.sub-para {
     right: 0px;
   }
 }
+@media (min-width: 425px) {
+  #demo-1 {
+    background: url(../images/banner1.jpg) no-repeat;
+    background-size:auto;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    min-height: 800px;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    z-index: 0;
+  }
+}
 
 @media (max-width: 440px) {
   .left-wthree-img {
